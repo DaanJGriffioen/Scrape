@@ -1,10 +1,10 @@
 name: run scrape.py
 
-on: 
-  schedule:
-    - cron:  '0 * 59 * *'
-    This runs at 10:00 AM UTC each day.
-    * is a special character in YAML so you have to quote this string
+on: [push]
+  # schedule:
+  #   - cron:  '0 10 * * *'
+    # This runs at 10:00 AM UTC each day.
+    # * is a special character in YAML so you have to quote this string
 
 jobs:
   build:
