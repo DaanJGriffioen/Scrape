@@ -34,6 +34,7 @@ for i in range(len(url)):
     text = minval[j]
     OutputFile.writelines(str(text))
     OutputFile.writelines(" ")
+    print(str(text))
   OutputFile.writelines('\n')
 
 OutputFile.close()
