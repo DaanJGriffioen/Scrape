@@ -2,7 +2,7 @@ name: run scrape.py
 
 on:
   schedule: 
-    - cron:  '*/10 * * * *'
+    - cron:  '13 7 * * *'
     # This runs at 10:00 AM UTC each day.
     # * is a special character in YAML so you have to quote this string
 
