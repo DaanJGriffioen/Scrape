@@ -25,5 +25,10 @@ jobs:
           pip install requests
 
       - name: execute py script # run scrape.py
-        run:
-          python3 scrape.py
+        run: |
+          python3 scrape.py > file.txt    
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
