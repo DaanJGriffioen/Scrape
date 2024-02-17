@@ -3,7 +3,7 @@ from datetime import datetime
 import requests
 import re
 
-OutputFile = open("iPrice.txt", "w")
+OutputFile = open("iPrice.txt", "a")
 OutputFile.writelines('\n'+ datetime.today().strftime('%Y-%m-%d') + '\n')
 url = ["https://www.refurbed.nl/p/iphone-12/", "https://www.refurbed.nl/p/iphone-12-pro/", "https://www.refurbed.nl/p/iphone-13/", "https://www.refurbed.nl/p/iphone-13-pro/"]
 name = ["iphone-12", "iphone-12-pro", "iphone-13", "iphone-13-pro"]
