@@ -94,7 +94,7 @@ OutputFile.write('\n' + "==============" + '\n')
 OutputFile.close()
 
 #append the bokeh output to the html file
-with open('iphonePrices.txt','r') as firstfile, open('file.html','a') as secondfile: 
+with open('IphonePrices.txt','r') as firstfile, open('file.html','a') as secondfile: 
     # read content from first file 
     for line in firstfile: 
              # append content to second file 
