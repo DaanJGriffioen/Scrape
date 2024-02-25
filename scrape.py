@@ -59,7 +59,7 @@ def makeGraph():
   data = pd.read_csv("prices.csv", encoding='utf8')
 
   x = list(range(len(data.Iphone12)))
-  p = figure(title="Iphone Prices 21-2-2024 to " + today, x_axis_label='x', y_axis_label='y',y_range=(0, 1000))
+  p = figure(title="Iphone Prices 21-2-2024 to " + today, x_axis_label='days after 21-2-2024', y_axis_label='price',y_range=(0, 1000))
   p.line(x, data.Iphone12, legend_label="Iphone-12", line_color="red" , line_width=2)
   p.line(x, data.Iphone12Pro, legend_label="Iphone-12-pro", line_color="green", line_width=2)
   p.line(x, data.Iphone13, legend_label="Iphone-13", line_color="blue", line_width=2)
