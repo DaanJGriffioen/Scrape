@@ -1,6 +1,6 @@
 name: run scrape.py
 
-on: push
+on: commit
   # schedule: 
   #   - cron:  '13 7 * * *'
     # This runs at 10:00 AM UTC each day.
